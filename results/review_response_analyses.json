@@ -1,0 +1,394 @@
+{
+  "n_exposed": 543,
+  "reversal_composition": {
+    "strict_drug": 60,
+    "any_reversal": 65,
+    "blood_products_only": 2,
+    "txa_only": 3,
+    "vitk": 57,
+    "pcc": 0,
+    "ffp": 1,
+    "platelets": 1,
+    "txa": 6,
+    "protamine": 3
+  },
+  "r11_strict_reversal": {
+    "strict->tx_any": {
+      "or": 7.34,
+      "lo": 3.63,
+      "hi": 14.82,
+      "p": 0.0,
+      "n": 543,
+      "events": 115
+    },
+    "strict->tx_rbc_bin": {
+      "or": 2.0,
+      "lo": 0.74,
+      "hi": 5.42,
+      "p": 0.1726,
+      "n": 543,
+      "events": 47
+    },
+    "strict->tx_ffp_bin": {
+      "or": 10.89,
+      "lo": 4.37,
+      "hi": 27.12,
+      "p": 0.0,
+      "n": 543,
+      "events": 27
+    },
+    "strict->tx_plt_bin": {
+      "or": 6.94,
+      "lo": 3.16,
+      "hi": 15.26,
+      "p": 0.0,
+      "n": 543,
+      "events": 72
+    },
+    "strict->hosp_death": {
+      "or": 0.59,
+      "lo": 0.22,
+      "hi": 1.55,
+      "p": 0.2849,
+      "n": 543,
+      "events": 74
+    },
+    "strict->hb_drop2": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 526,
+      "events": 136
+    },
+    "strict->thrombosis_any": {
+      "or": 2.36,
+      "lo": 1.05,
+      "hi": 5.3,
+      "p": 0.0381,
+      "n": 502,
+      "events": 94
+    }
+  },
+  "r11_original_any_reversal": {
+    "any->tx_any": {
+      "or": 6.94,
+      "lo": 3.51,
+      "hi": 13.7,
+      "p": 0.0,
+      "n": 543,
+      "events": 115
+    },
+    "any->tx_rbc_bin": {
+      "or": 2.12,
+      "lo": 0.83,
+      "hi": 5.37,
+      "p": 0.1147,
+      "n": 543,
+      "events": 47
+    },
+    "any->hosp_death": {
+      "or": 0.73,
+      "lo": 0.3,
+      "hi": 1.79,
+      "p": 0.4973,
+      "n": 543,
+      "events": 74
+    },
+    "any->hb_drop2": {
+      "or": 1.34,
+      "lo": 0.65,
+      "hi": 2.74,
+      "p": 0.4264,
+      "n": 526,
+      "events": 136
+    },
+    "any->thrombosis_any": {
+      "or": 2.12,
+      "lo": 0.96,
+      "hi": 4.68,
+      "p": 0.0613,
+      "n": 502,
+      "events": 94
+    }
+  },
+  "r11_crosstab": {
+    "rev_any_vs_tx_any": {
+      "0": {
+        "0": 396,
+        "1": 32
+      },
+      "1": {
+        "0": 82,
+        "1": 33
+      }
+    },
+    "rev_strict_vs_tx_rbc": {
+      "0": {
+        "0": 446,
+        "1": 50
+      },
+      "1": {
+        "0": 37,
+        "1": 10
+      }
+    },
+    "rev_strict_vs_tx_ffp": {
+      "0": {
+        "0": 470,
+        "1": 46
+      },
+      "1": {
+        "0": 13,
+        "1": 14
+      }
+    },
+    "rev_strict_vs_tx_plt": {
+      "0": {
+        "0": 432,
+        "1": 39
+      },
+      "1": {
+        "0": 51,
+        "1": 21
+      }
+    }
+  },
+  "r12_early_exit": {
+    "early_death_lt48h": 9,
+    "early_discharge_lt48h": 35,
+    "total_early_exit": 44,
+    "restarted_among_early_exit": 1
+  },
+  "r12_restart_sensitivity": {
+    "all->hosp_death": {
+      "or": 0.4,
+      "lo": 0.16,
+      "hi": 0.98,
+      "p": 0.045,
+      "n": 543,
+      "events": 74
+    },
+    "excl_early_exit->hosp_death": {
+      "or": 0.3,
+      "lo": 0.1,
+      "hi": 0.88,
+      "p": 0.0284,
+      "n": 499,
+      "events": 65
+    },
+    "all->thrombosis_any": {
+      "or": 3.08,
+      "lo": 1.59,
+      "hi": 5.96,
+      "p": 0.0008,
+      "n": 502,
+      "events": 94
+    },
+    "excl_early_exit->thrombosis_any": {
+      "or": 3.04,
+      "lo": 1.52,
+      "hi": 6.08,
+      "p": 0.0017,
+      "n": 490,
+      "events": 92
+    },
+    "all->hb_drop2": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 526,
+      "events": 136
+    },
+    "excl_early_exit->hb_drop2": {
+      "or": 0.56,
+      "lo": 0.27,
+      "hi": 1.18,
+      "p": 0.128,
+      "n": 483,
+      "events": 122
+    }
+  },
+  "r14_subtype_in_exposed": {
+    "sdh": 178,
+    "unspecified": 86,
+    "tsah": 84,
+    "sdh|tsah": 53,
+    "tich": 43,
+    "unspecified|unspecified_head": 13,
+    "sdh|tich|tsah": 12,
+    "contusion": 12,
+    "tich|tsah": 8,
+    "diffuse": 7,
+    "edh|sdh": 5,
+    "sdh|tich": 5
+  },
+  "r14_sdh_definition": {
+    "sdh_any": 274,
+    "sdh_any_pct": 50.5
+  },
+  "r14_sdh_strata": {
+    "sdh->thrombosis_any": {
+      "or": Infinity,
+      "lo": Infinity,
+      "hi": Infinity,
+      "p": 0.0,
+      "n": 267,
+      "events": 54
+    },
+    "non_sdh->thrombosis_any": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 235,
+      "events": 40
+    },
+    "sdh->hosp_death": {
+      "or": Infinity,
+      "lo": Infinity,
+      "hi": Infinity,
+      "p": 0.0,
+      "n": 274,
+      "events": 45
+    },
+    "non_sdh->hosp_death": {
+      "or": 0.91,
+      "lo": 0.27,
+      "hi": 3.1,
+      "p": 0.8813,
+      "n": 269,
+      "events": 29
+    }
+  },
+  "r15_class_counts": {
+    "antiplatelet_any": 451,
+    "vka_any": 82,
+    "doac_any": 43
+  },
+  "r15_class_strata": {
+    "ap_only->thrombosis_any": {
+      "or": 4.82,
+      "lo": 2.14,
+      "hi": 10.86,
+      "p": 0.0001,
+      "n": 383,
+      "events": 71
+    },
+    "vka_any->thrombosis_any": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 77,
+      "events": 15
+    },
+    "doac_any->thrombosis_any": {
+      "or": 3.45,
+      "lo": 0.0,
+      "hi": 6656.64,
+      "p": 0.7484,
+      "n": 42,
+      "events": 8
+    },
+    "ap_only->hosp_death": {
+      "or": 0.45,
+      "lo": 0.17,
+      "hi": 1.18,
+      "p": 0.1036,
+      "n": 418,
+      "events": 56
+    },
+    "vka_any->hosp_death": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 82,
+      "events": 12
+    },
+    "doac_any->hosp_death": {
+      "or": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p": 0.0,
+      "n": 43,
+      "events": 6
+    }
+  },
+  "r17_per_db": {
+    "eicu": {
+      "n": 4450,
+      "exposed": 319,
+      "exposed_pct": 7.2,
+      "reversal_pct_of_exposed": 10.0,
+      "restart_pct_of_exposed": 9.1,
+      "age_missing_pct": 5.8,
+      "gcs_missing_pct": 24.4,
+      "inr_missing_pct": 25.8,
+      "thrombosis_missing_pct": 0.0
+    },
+    "mimic": {
+      "n": 2027,
+      "exposed": 149,
+      "exposed_pct": 7.4,
+      "reversal_pct_of_exposed": 16.8,
+      "restart_pct_of_exposed": 63.1,
+      "age_missing_pct": 0.0,
+      "gcs_missing_pct": 0.5,
+      "inr_missing_pct": 14.8,
+      "thrombosis_missing_pct": 0.0
+    },
+    "nwicu": {
+      "n": 974,
+      "exposed": 34,
+      "exposed_pct": 3.5,
+      "reversal_pct_of_exposed": 14.7,
+      "restart_pct_of_exposed": 44.1,
+      "age_missing_pct": 0.0,
+      "gcs_missing_pct": 100.0,
+      "inr_missing_pct": 100.0,
+      "thrombosis_missing_pct": 0.0
+    },
+    "sicdb": {
+      "n": 551,
+      "exposed": 21,
+      "exposed_pct": 3.8,
+      "reversal_pct_of_exposed": 0.0,
+      "restart_pct_of_exposed": 38.1,
+      "age_missing_pct": 0.0,
+      "gcs_missing_pct": 100.0,
+      "inr_missing_pct": 13.1,
+      "thrombosis_missing_pct": 100.0
+    },
+    "umcdb": {
+      "n": 560,
+      "exposed": 20,
+      "exposed_pct": 3.6,
+      "reversal_pct_of_exposed": 15.0,
+      "restart_pct_of_exposed": 0.0,
+      "age_missing_pct": 36.4,
+      "gcs_missing_pct": 7.1,
+      "inr_missing_pct": 100.0,
+      "thrombosis_missing_pct": 100.0
+    }
+  },
+  "r17_key_missingness_exposed": {
+    "age": 4.1,
+    "gcs_any": 18.0,
+    "admit_inr": 27.4,
+    "admit_map": 100.0,
+    "admit_hgb": 3.1,
+    "l_lac": 69.4,
+    "charlson": 66.3,
+    "thrombosis_any": 7.6,
+    "hb_drop2": 3.1
+  },
+  "restart_timing": {
+    "n": 146,
+    "p25": 58.8,
+    "median": 69.4,
+    "p75": 107.2
+  }
+}

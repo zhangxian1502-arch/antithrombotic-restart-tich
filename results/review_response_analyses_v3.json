@@ -1,0 +1,85 @@
+{
+  "early_exit": {
+    "n_total": 523,
+    "n_early_exit": 24,
+    "n_early_death": 5,
+    "n_early_discharge": 19,
+    "restarted_in_early_exit": 1
+  },
+  "early_exit_models": {
+    "all->hosp_death": {
+      "or": 0.62,
+      "lo": 0.28,
+      "hi": 1.35,
+      "p": 0.2296,
+      "n": 543,
+      "events": 74
+    },
+    "excl->hosp_death": {
+      "or": 0.58,
+      "lo": 0.24,
+      "hi": 1.37,
+      "p": 0.214,
+      "n": 499,
+      "events": 65
+    },
+    "all->thrombosis_any": {
+      "or": 3.84,
+      "lo": 2.09,
+      "hi": 7.04,
+      "p": 0.0,
+      "n": 502,
+      "events": 94
+    },
+    "excl->thrombosis_any": {
+      "or": 3.82,
+      "lo": 2.04,
+      "hi": 7.15,
+      "p": 0.0,
+      "n": 490,
+      "events": 92
+    },
+    "all->hb_drop2": {
+      "or": 1.2,
+      "lo": 0.68,
+      "hi": 2.12,
+      "p": 0.5333,
+      "n": 526,
+      "events": 136
+    },
+    "excl->hb_drop2": {
+      "or": 1.12,
+      "lo": 0.6,
+      "hi": 2.06,
+      "p": 0.7249,
+      "n": 483,
+      "events": 122
+    }
+  },
+  "hb_drop2": {
+    "restart_min4": {
+      "or": 1.2,
+      "lo": 0.68,
+      "hi": 2.12,
+      "p": 0.5333,
+      "n": 526,
+      "events": 136
+    },
+    "restart_tiny3": {
+      "or": 1.19,
+      "lo": 0.68,
+      "hi": 2.08,
+      "p": 0.5393,
+      "n": 526,
+      "events": 136
+    },
+    "crude_restart": {
+      "a": 38,
+      "b": 103,
+      "c": 98,
+      "d": 287,
+      "crude_or": 1.08,
+      "fisher_p": 0.7368
+    }
+  }
+}

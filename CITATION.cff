@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Analysis code: Antithrombotic resumption after traumatic intracranial haemorrhage"
+message: "If you use this code or data, please cite the associated manuscript and this archived version."
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Xian
+    affiliation: "Department of Critical Care Medicine, The Affiliated Huaian No.1 People's Hospital of Nanjing Medical University, Huai'an, China"
+version: 1.0.0
+date-released: 2026-11-07
+license: MIT
+repository-code: "https://zenodo.org/doi/10.5281/zenodo.XXXXXXX"
+keywords:
+  - traumatic intracranial haemorrhage
+  - antithrombotic therapy
+  - critical care databases
+  - MIMIC-IV
+  - eICU-CRD
+references:
+  - type: article
+    title: "Antithrombotic resumption after traumatic intracranial haemorrhage: timing, thrombosis and mortality across five critical care databases"
+    author:
+      - family-names: Zhang
+        given-names: Xian
+    journal: "Neurocritical Care"
+    year: 2026
